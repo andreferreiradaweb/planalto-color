@@ -1,0 +1,283 @@
+/* -------------- Estilo Base -------------- */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.6rem;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color:#555;
+}
+
+/* -------------- Grid --------------------- */
+.container{
+	width: 100%;
+	max-width: 990px;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	box-sizing: border-box;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: -1.5rem;
+	padding-right: -1.5rem;
+}
+
+.col{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+@media screen and (min-width: 400px){
+	.container{
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 750px){
+	.container{
+		width: 80%;
+	}
+
+
+	.col-1{
+		flex: 0 0 8.33333333%;
+		max-width: 8.33333333%;
+	}
+	.col-2{
+		flex: 0 0 16.66666667%;
+		max-width: 16.66666667%;
+	}
+	.col-3{
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.col-4{
+		flex: 0 0 33.33333333%;
+		max-width: 33.33333333%;
+	}
+	.col-5{
+		flex: 0 0 41.66666667%;
+		max-width: 41.66666667%;
+	}
+	.col-6{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.col-6{
+		flex: 0 0 58.33333333%;
+		max-width: 58.33333333%;
+	}
+	.col-8{
+		flex: 0 0 66.66666667%;
+		max-width: 66.66666667%;
+	}
+	.col-9{
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+	.col-10{
+		flex: 0 0 83.33333333%;
+		max-width: 83.33333333%;
+	}
+	.col-11{
+		flex: 0 0 91.66666667%;
+		max-width: 91.66666667%;
+	}
+	.col-12{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+/* -------------- Tipografia --------------- */
+h1, h2, h3, h4, h5, h6, strong{
+	color: #333;
+	font-weight: 700;
+}
+h1{font-size: 4rem;}
+h2{font-size: 3.4rem;}
+h3{font-size: 2.8rem;}
+h4{font-size: 2.2rem;}
+h5{font-size: 1.6rem;}
+h6{font-size: 1.4rem;}
+p{margin-top: 0;}
+/* -------------- Links -------------------- */
+a{color: #337ab7;}
+a:hover, a:focus{color: #23527c;}
+a:visited{color:#c34f4a;}
+
+/* -------------- Botões ------------------- */
+.botao, button, 
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+display: inline-block;
+height: 3.8rem;
+padding: 0 3rem;
+color: #555;
+cursor: default;
+text-align: center;
+font-size: 1.4rem;
+font-weight: 700;
+line-height: 3.8rem;
+text-decoration: none;
+background-color: #fff;
+border-right: 2px;
+border: 1px solid #bbb;
+box-sizing: border-box;		
+}
+
+.botao:hover, button:hover, 
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover{
+	border-color: #888;
+	color:#333;
+}
+
+.botao:focus, button:focus, 
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus{
+	background-color: #f1f1f1;
+	border-color: #888;
+	outline: 0;
+}
+
+.botao:active, button:active, 
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active{
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.botao.destacado, button.botao.destacado, 
+input[type="submit"].botao.destacado,
+input[type="reset"].botao.destacado,
+input[type="button"].botao.destacado{
+	background-color: #33c3f0;
+	border-color: #33c3f0;
+	color:#fff;
+}
+
+.botao.destacado:hover, button.botao.destacado:hover, 
+input[type="submit"].botao.destacado:hover,
+input[type="reset"].botao.destacado:hover,
+input[type="button"].botao.destacado:hover,
+.botao.destacado:focus, button.botao.destacado:focus, 
+input[type="submit"].botao.destacado:focus,
+input[type="reset"].botao.destacado:focus,
+input[type="button"].botao.destacado:focus{
+	background-color: #1eaedb;
+	border-color: #1eaedb;
+	color:#fff;
+}
+
+.botao:visited{
+	color: #555;
+}
+.botao.destacado:visited{
+	color: #fff;
+}
+/* -------------- Formulário --------------- */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select{
+	height: 3.8rem;
+	padding: .6rem 1rem;
+	background-color: #fff;
+	border: 1px solid #d1d1d1;
+	border-radius: 2px;
+	box-shadow: 2px;
+	box-sizing: border-box;
+	font: inherit;
+
+}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus{
+	border: 1px solid #33c3f0;
+	outline: 0;
+}
+textarea{
+	min-height: 6.5rem;
+}
+label{
+	display: block;
+	font-height: 700;
+}
+/* -------------- Listas ------------------- */
+ol, ul{
+	list-style-position: inside;
+	padding-left: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul{
+	padding-left: 3rem;
+	margin-top: 1rem;
+}
+li{
+	margin-bottom: 1rem;
+}
+
+/* -------------- Códigos ------------------ */
+code{
+	background-color: #f1f1f1;
+	color:#c7254e;
+	padding: .2rem 5rem;
+	border-radius: 2px;
+}
+pre > code{
+	display: block;
+	padding: 1rem 1.5rem;
+}
+
+/* -------------- Tabelas ------------------ */
+table{
+	border-collapse: collapse;
+}
+th, td{
+	padding: 1rem .7rem;
+	text-align: left;
+	border-bottom: 1px solid #e1e1e1;
+}
+/* -------------- Espaçamentos ------------- */
+.botao,
+button,
+input,
+select,
+textarea,
+table{
+	margin-bottom: 1rem;
+}
+label{
+	margin-bottom: .4rem;
+}
+/* -------------- Utilidades --------------- */
+.fluxo{
+	box-sizing: border-box;
+	width:100%;
+}

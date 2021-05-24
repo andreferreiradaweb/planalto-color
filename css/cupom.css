@@ -1,0 +1,15 @@
+.cupom{
+
+	display: flex;
+	justify-content: center;
+}
+@media print{
+	input{
+		display: none;
+	}
+}
+.btn-cupom{
+	margin-top:1.5rem;
+	margin-bottom:3rem;
+	justify-content: center;
+}
